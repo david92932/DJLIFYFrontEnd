@@ -1,0 +1,32 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to DJ LIFY!
+  </h1>
+</div>
+
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span>Event Tracker</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <button mat-button mat-raised-button color="primary" [matMenuTriggerFor]="belowMenu">Menu</button>
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+<!--      <button mat-menu-item routerLink="/list">Find Event</button>-->
+      <button mat-menu-item routerLink="/event/create">Create New Event</button>
+      <button mat-menu-item routerLink="dj/login">Login</button>
+<!--      <button mat-menu-item routerLink="/messages">Messages</button>-->
+<!--      <button mat-menu-item routerLink="/profile">Profile</button>-->
+    </mat-menu>
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
+<h2>Here are some links to help you start: </h2>
+
+
+
+
+
